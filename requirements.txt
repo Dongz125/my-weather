@@ -1,0 +1,10 @@
+streamlit>=1.37,<2.0
+requests>=2.31,<3.0
+pandas>=2.1,<3.0
+plotly>=5.20,<7.0
+folium>=0.16,<1.0
+streamlit-folium>=0.20,<1.0
+argon2-cffi>=23.1,<26.0
+pytest>=8.0,<9.0
+jupyter>=1.0,<2.0
+nbformat>=5.10,<6.0
