@@ -97,6 +97,17 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
+### Windows Git Bash
+
+```bash
+python -m venv .venv
+source .venv/Scripts/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+When activation succeeds, the prompt normally begins with `(.venv)`.
+
 ### macOS and Linux
 
 ```bash
@@ -124,6 +135,20 @@ Choose one of the following methods. Streamlit secrets take precedence over envi
 
 Copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml`:
 
+Git Bash, macOS, or Linux:
+
+```bash
+cp .streamlit/secrets.toml.example .streamlit/secrets.toml
+```
+
+Windows PowerShell:
+
+```powershell
+Copy-Item .streamlit/secrets.toml.example .streamlit/secrets.toml
+```
+
+Open the copied file and replace the placeholder:
+
 ```toml
 OPENWEATHER_API_KEY = "your_real_api_key"
 ```
@@ -144,7 +169,7 @@ Command Prompt:
 set OPENWEATHER_API_KEY=your_real_api_key
 ```
 
-macOS/Linux:
+Git Bash, macOS, or Linux:
 
 ```bash
 export OPENWEATHER_API_KEY="your_real_api_key"
